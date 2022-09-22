@@ -1,17 +1,20 @@
-def showparameter_InOutmode(value, exponent) # Formal Parameter
-  x = value ** exponent
-  return x
+def showparameter_InOutmode(base, exponent) # Formal Parameter
+  raisedvalue = 1
+  for n in 1..(exponent) do
+    raisedvalue *= base
+  end
+  return raisedvalue
 
 end
 
 puts "What value do you want for the base? "
-value = gets.to_i
+base = gets.to_i
 puts "What value do you want for the exponent? "
 exponent = gets.to_i
 
-x = showparameter_InOutmode(value,exponent) # Actual Parameter
+raisedvalue = showparameter_InOutmode(base,exponent) # Actual Parameter
 
-print "In Out Mode : ",value, "^", exponent , " = " , x , "\n"
+print "In Out Mode : ",base, "^", exponent , " = " , raisedvalue , "\n"
 
 __END__
 
