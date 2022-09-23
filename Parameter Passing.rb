@@ -18,10 +18,10 @@ print "In Out Mode : ",base, "^", exponent , " = " , raisedvalue , "\n"
 
 __END__
 
-1. Access path is given to the method to reference the value of the variable rather than making a copy of the value of the variable to a local variable within the method.
+1.Reference in the form of an unique object_id is given to the method to call the value of the variable rather than making a copy of the value of the variable to a local variable within the method.
 2. The Ruby programming language utilizes the In Out model of parameter passing as it can both accept values as you call the method and return values as the method call ends.
-3. The Ruby programming language utilizes the Pass by Reference technique of parameter passing as it is a In Out model but gives the variables memory address to the functions when they are
-called rather than copying the actual value
+3. The Ruby programming language utilizes the a technique close to the Pass by Reference parameter passing method but rather than giving methods a variable’s access path , Ruby utilizes their unique object_id to allow variable referencing.
+
 
 
 
